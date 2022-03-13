@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/neon"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/wynnzy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/wynnzy"
+            android:contentDescription="@string/todo" />
+
+        <TextView
+            android:id="@+id/silahkan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/wynnzy"
+            android:hint="@string/silahkan_login_untuk_masuk"
+            android:text="@string/silahkanlogin_untuk_masuk"
+            android:textAlignment="center"
+            android:textColor="#FFFF"
+            android:textColorHint="#FFFF" />
+
+        <EditText
+            android:id="@+id/Username"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/silahkan"
+            android:layout_centerHorizontal="true"
+            android:drawableStart="@drawable/ic_baseline_account_box_24"
+            android:hint="@string/username"
+            android:drawablePadding="10dp"
+            android:minHeight="48dp"
+            android:layout_marginBottom="@dimen/fab_margin"
+            android:textColor="#FFFF"
+            android:textColorHint="#FFFF"
+            android:autofillHints="@+id/Username"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/Passowrd"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Username"
+            android:layout_centerHorizontal="true"
+            android:autofillHints="@+id/Passowrd"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+            android:drawablePadding="10dp"
+            android:hint="@string/password"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColor="#FFFF"
+            android:textColorHint="#FFFF" />
+
+        <Button
+            android:id="@+id/btn_sign_in"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Passowrd"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn_sign_in"
+            android:text="@string/sign_in" />
+
+        <TextView
+            android:id="@+id/create_acc"
+            android:textAlignment="center"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:layout_below="@id/btn_sign_in"
+            android:text="@string/create_a_newacc"
+            android:layout_width="match_parent"
+            android:textColor="#FFFF"
+            android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
